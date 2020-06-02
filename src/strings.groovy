@@ -1,3 +1,5 @@
+import java.util.concurrent.atomic.AtomicIntegerFieldUpdater
+
 class strings {
     static void main(String[] args) {
         def name = "Derek";
@@ -28,6 +30,15 @@ class strings {
 
         println(repeatStr.split(' '));
         println(repeatStr.toList());
+
+        println(repeatStr.replace('i','He'));
+        println(repeatStr.toUpperCase());
+        println(repeatStr.toLowerCase());
+
+
+        println("Ant <=> Banana " + ('Ant' <=> 'Banana'));
+        println("Banana <=> Ant " + ('Banana' <=> 'Ant'));
+        println("Ant <=> Ant " + ('Ant' <=> 'Ant'));
     }
 }
 
